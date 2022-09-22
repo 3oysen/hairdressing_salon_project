@@ -14,13 +14,19 @@ function App({ setMode }) {
 }
 
 export default function ColorModeWrapper() {
-	const [mode, setMode] = useState("dark");
+	const [mode, setMode] = useState("light");
 	const theme = useMemo(
 		() =>
 			createTheme({
 				palette: {
+					primary: {
+						main: "#fefefe",
+					},
 					mode,
 				},
+				// typography: {
+				// 	fontFamily:
+				// }
 			}),
 		[mode]
 	);
