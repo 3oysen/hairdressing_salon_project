@@ -14,7 +14,7 @@ function App({ setMode }) {
 }
 
 export default function ColorModeWrapper() {
-	const [mode, setMode] = useState("light");
+	const [mode, setMode] = useState("dark");
 	const theme = useMemo(
 		() =>
 			createTheme({

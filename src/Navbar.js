@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ContentCutIcon from "@mui/icons-material/ContentCut";
+import Brightness6Icon from "@mui/icons-material/Brightness6";
 
 const pages = ["Products", "Pricing", "Blog"];
 
@@ -128,12 +129,13 @@ const Navbar = ({ setMode }) => {
 							sx={{
 								my: 2,
 								color: "white",
-								display: "block",
+								display: "flex",
 							}}
 							onClick={handleToggleColorTheme}
 						>
-							Color Mode
+							<Brightness6Icon />
 						</Button>
+
 						{pages.map((page) => (
 							<Button
 								key={page}
