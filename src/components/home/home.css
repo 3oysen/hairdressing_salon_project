@@ -1,0 +1,26 @@
+.home-img {
+	background-image: url("./home.jpg");
+	width: 100%;
+	height: 60vh;
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+	display: flex;
+	justify-content: center;
+}
+
+.home-content-aligner {
+	display: flex;
+	align-content: flex-start;
+}
+
+.home-container {
+	justify-content: center;
+	align-items: flex-start;
+	color: white;
+	width: 100%;
+	max-width: 900px;
+	height: 100%;
+	border-top: 86px solid;
+}
